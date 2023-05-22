@@ -29,7 +29,7 @@ export default function App(){
   const listItems = topDesserts.map(dessert => {
     const itemImage = <img src ={dessert.image} alt={dessert.description} className="image"></img>
     const itemText = `${dessert.title} - ${dessert.price}`
-    return <li>{itemImage}
+    return <li className="list">{itemImage}<br></br>
     {itemText}</li>
   })
   return (
